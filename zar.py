@@ -57,7 +57,7 @@ def nyit(jo, proba):
     if egyezik == True:
         elteres=ord(jo[1])-ord(proba[1])
         for i in range(2, len(jo)):
-            if elteres-ord(jo[i])-ord(proba[i]) %10 != 0:
+            if (elteres-(ord(jo[i])-ord(proba[i])) ) %10 != 0:
                 egyezik=False        
     
     return egyezik
