@@ -1,0 +1,2 @@
+# 2016.majus.10_Idegen_nyelv_mint_Magyar_Emelt-_szintu_Informatika_Erettsegi_Megoldas
+Megoldas Python programozasi nyelven
