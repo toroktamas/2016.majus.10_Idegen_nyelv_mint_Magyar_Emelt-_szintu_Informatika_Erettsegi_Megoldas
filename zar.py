@@ -44,7 +44,8 @@ kod = []
 #a = random.choice("0123456789")
 while len(kod) < len(szamsorozat):
     a=random.choice("0123456789")
-    kod.append(a)
+    if a not in kod:
+        kod.append(a)
 print("Egy {0} hosszu kodszam: {1}".format(len(kod), "".join(kod)))
 
 #print("6. feladat")
@@ -56,7 +57,7 @@ def nyit(jo, proba):
     if egyezik == True:
         elteres=ord(jo[1])-ord(proba[1])
         for i in range(2, len(jo)):
-            if elteres-ord(jo[i])-ord(proba[i]) and ord(jo[i])%ord(proba[i])==0:
+            if elteres-ord(jo[i])-ord(proba[i]) %10 != 0:
                 egyezik=False        
     
     return egyezik
